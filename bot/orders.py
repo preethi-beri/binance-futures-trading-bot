@@ -1,3 +1,5 @@
+import time
+
 from binance.enums import *
 from bot.client import client
 from bot.logging_config import logger
@@ -15,7 +17,18 @@ def place_market_order(symbol, side, quantity):
         )
 
         logger.info(f"Response: {order}")
-        return order
+
+        # Wait for Binance to update order status
+        time.sleep(2)
+
+        order_info = client.futures_get_order(
+            symbol=symbol,
+            orderId=order["orderId"]
+        )
+
+        logger.info(f"Final Order Status: {order_info}")
+
+        return order_info
 
     except Exception as e:
         logger.error(f"Error placing market order: {e}")
@@ -38,7 +51,18 @@ def place_limit_order(symbol, side, quantity, price):
         )
 
         logger.info(f"Response: {order}")
-        return order
+
+        # Wait for Binance to update order status
+        time.sleep(2)
+
+        order_info = client.futures_get_order(
+            symbol=symbol,
+            orderId=order["orderId"]
+        )
+
+        logger.info(f"Final Order Status: {order_info}")
+
+        return order_info
 
     except Exception as e:
         logger.error(f"Error placing limit order: {e}")
