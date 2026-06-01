@@ -1,0 +1,2 @@
+2026-06-01 21:05:35,235 - INFO - LIMIT ORDER: SELL 0.001 BTCUSDT at 90000.0
+2026-06-01 21:05:36,289 - INFO - Response: {'orderId': 13708008637, 'symbol': 'BTCUSDT', 'status': 'NEW', 'type': 'LIMIT', 'side': 'SELL'}

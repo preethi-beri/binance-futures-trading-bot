@@ -1,0 +1,2 @@
+2026-06-01 21:04:05,943 - INFO - MARKET ORDER: BUY 0.001 BTCUSDT
+2026-06-01 21:04:06,984 - INFO - Response: {'orderId': 13707907298, 'symbol': 'BTCUSDT', 'status': 'NEW', 'type': 'MARKET', 'side': 'BUY'}
