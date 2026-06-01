@@ -204,6 +204,45 @@ SUCCESS
 * Web-Based User Interface
 
 ---
+## Bonus Feature
+
+### Enhanced CLI User Experience
+
+In addition to standard command-line arguments, the application supports an interactive mode for easier order placement.
+
+### Command-Line Mode
+
+```bash
+python cli.py --symbol BTCUSDT --side BUY --type MARKET --qty 0.001
+```
+
+### Interactive Mode
+
+```bash
+python cli.py
+```
+
+Example:
+
+```text
+========== Binance Futures Trading Bot ==========
+
+Enter Symbol (e.g. BTCUSDT): BTCUSDT
+Enter Side (BUY/SELL): BUY
+Enter Order Type (MARKET/LIMIT): MARKET
+Enter Quantity: 0.001
+```
+
+### Benefits
+
+* Improved user experience through guided prompts
+* Beginner-friendly order placement
+* Clear validation and error messages
+* Supports both interactive and command-line workflows
+
+This enhancement satisfies the optional requirement of providing an improved CLI experience while maintaining full compatibility with the original command-line interface.
+
+---
 
 ## Author
 
